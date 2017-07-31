@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'Conv_Ubuntu-B';
+	src: url('Ubuntu-B.eot');
+	src: local('☺'), url('Ubuntu-B.woff') format('woff'), url('Ubuntu-B.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Ubuntu-Light';
+	src: url('Ubuntu-Light.eot');
+	src: local('☺'), url('Ubuntu-Light.woff') format('woff'), url('Ubuntu-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Ubuntu-Medium';
+	src: url('Ubuntu-Medium.eot');
+	src: local('☺'), url('Ubuntu-Medium.woff') format('woff'),url('Ubuntu-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Ubuntu-Regular';
+	src: url('Ubuntu-Regular.eot');
+	src: local('☺'), url('Ubuntu-Regular.woff') format('woff'), url('Ubuntu-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
