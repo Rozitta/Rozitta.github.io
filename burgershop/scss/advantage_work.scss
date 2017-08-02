@@ -1,0 +1,46 @@
+// секция №2 "Мы лучшие" - Наши работы
+
+.work{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 940px;
+    margin:0 auto;
+    margin-top: 69px;
+    .work-type{
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        &__img{
+            margin: 0 auto;
+            margin-bottom: 35px;
+            &--hand{
+                margin-top: 8px;
+            }
+            &--meat{
+                margin-top: -18px;
+            }
+            &--salat{
+                margin-top: -8px;
+                margin-bottom: 38px;
+                
+            }
+        }
+            &__title{
+            font-family: 'Conv_Lifehack Medium';
+            font-size: 24px;
+            color:#2f3234;
+            margin: 0; 
+            text-align: center;
+            margin-bottom: -2px;
+        }
+        &__desc{
+            font-family: 'Conv_Ubuntu-Light';
+            font-size: 14px;
+            color:#2f3234;
+            text-align: center;
+            margin-bottom: 10px;
+            line-height: 23px;
+        }
+    }
+}
