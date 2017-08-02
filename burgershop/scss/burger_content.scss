@@ -16,13 +16,14 @@
             color: #f9b43b;
             margin: 0;
             text-transform: uppercase;
-        }
-        .best-burger__desc {
-            font-family: 'Conv_Lifehack Medium';
-            font-size: 65px;
-            color: #fff;
-            margin: 0;
-            margin-top: 10px;
-        }   
+            .best-burger__desc {
+                font-family: 'Conv_Lifehack Medium';
+                font-size: 65px;
+                color: #fff;
+                margin: 0;
+                margin-top: 10px;
+                text-transform: none;
+            }   
+        } 
     }
 }
