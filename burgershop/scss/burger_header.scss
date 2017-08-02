@@ -1,0 +1,39 @@
+// Блок header (шапка сайта)
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 8px;
+    padding-right: 9px;
+        &__logo {
+            margin-right: 47px;
+        }
+        &__menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .navbar__list {
+                margin: 0;
+                padding: 0;
+                .navbar__items {
+                    display: inline-block;
+                    list-style: none;
+                    &::after {
+                        content: '\2022';
+                        color: #fff;
+                        padding: 0 15px;
+                    }
+                    &:last-child::after {
+                        content: '';
+                    }
+                    .navbar__link{
+                            text-decoration: none;
+                        text-transform: uppercase;
+                        color: #fff;
+                        font-family: 'Conv_Ubuntu-Medium';
+                        font-size: 13px;
+                    }
+            }
+        }
+    }
+}          

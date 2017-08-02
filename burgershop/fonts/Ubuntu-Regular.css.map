@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,uBAAuB;AACvB,UAMC;EALA,WAAW,EAAE,qBAAqB;EAClC,GAAG,EAAE,+BAA+B;EACpC,GAAG,EAAE,8JAA8J;EACnK,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM",
+"sources": ["Ubuntu-Regular.scss"],
+"names": [],
+"file": "Ubuntu-Regular.css"
+}

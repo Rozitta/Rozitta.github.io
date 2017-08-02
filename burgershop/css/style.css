@@ -1,82 +1,93 @@
-@import url(../fonts/Ubuntu/Ubuntu.css);
-@import url(../fonts/Gagalin/Gagalin.css);
-@import url(../fonts/lifehack/lifehack.css);
-.header {
-  margin: 0 auto;
-  width: 1100px;
-  min-height: 650px;
-  background: url(../icons/header_bg.jpg) center top/cover no-repeat; }
-  .header .navbar {
+@import url(../fonts/fonts.css);
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 8px;
+  padding-right: 9px; }
+  .navbar__logo {
+    margin-right: 47px; }
+  .navbar__menu {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding-top: 8px;
-    padding-right: 9px; }
-    .header .navbar__logo {
-      margin-right: 47px; }
-    .header .navbar__menu {
-      display: flex;
-      justify-content: space-around;
-      align-items: center; }
-      .header .navbar__menu .navbar-menu__list {
-        margin: 0;
-        padding: 0; }
-        .header .navbar__menu .navbar-menu__list .navbar-menu__items {
-          display: inline-block;
-          list-style: none; }
-          .header .navbar__menu .navbar-menu__list .navbar-menu__items::after {
-            content: '\2022';
-            color: #fff;
-            padding: 0 15px; }
-          .header .navbar__menu .navbar-menu__list .navbar-menu__items:last-child::after {
-            content: ''; }
-          .header .navbar__menu .navbar-menu__list .navbar-menu__items .navbar-menu__link {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: #fff;
-            font-family: 'Conv_Ubuntu-Medium';
-            font-size: 13px; }
-  .header .order__submit {
-    font-family: 'Conv_Ubuntu-Medium';
-    color: #fff;
-    font-size: 13px;
-    padding: 10px 16px;
-    background-color: #e45028;
-    border: none;
-    box-sizing: border-box;
-    border-radius: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.7s; }
-    .header .order__submit:hover {
-      background-color: #c1401e; }
-  .header .best-burger {
-    display: flex;
-    justify-content: center;
     align-items: center; }
-    .header .best-burger__image {
-      margin-left: -34px; }
-    .header .best-burger__content {
-      max-width: 410px;
-      margin-top: 70px;
-      padding-left: 17px; }
-      .header .best-burger__content .best-burger__title {
-        font-family: 'Conv_Gagalin-Regular';
-        font-size: 72px;
-        color: #f9b43b;
-        margin: 0;
-        text-transform: uppercase; }
-      .header .best-burger__content .best-burger__desc {
-        font-family: 'Conv_Lifehack Medium';
-        font-size: 65px;
-        color: #fff;
-        margin: 0;
-        margin-top: 10px; }
-  .header .arrow {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px; }
+    .navbar__menu .navbar__list {
+      margin: 0;
+      padding: 0; }
+      .navbar__menu .navbar__list .navbar__items {
+        display: inline-block;
+        list-style: none; }
+        .navbar__menu .navbar__list .navbar__items::after {
+          content: '\2022';
+          color: #fff;
+          padding: 0 15px; }
+        .navbar__menu .navbar__list .navbar__items:last-child::after {
+          content: ''; }
+        .navbar__menu .navbar__list .navbar__items .navbar__link {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #fff;
+          font-family: 'Conv_Ubuntu-Medium';
+          font-size: 13px; }
+
+.burger {
+  width: 100%;
+  height: 100vh;
+  background: url(../icons/header_bg.jpg) center top/cover no-repeat; }
+  .burger .container {
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto; }
+    .burger .container .main-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+
+.order__submit {
+  font-family: 'Conv_Ubuntu-Medium';
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 16px;
+  background-color: #e45028;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.7s; }
+  .order__submit:hover {
+    background-color: #c1401e; }
+
+.best-burger {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .best-burger__image {
+    margin-left: -34px; }
+  .best-burger__content {
+    max-width: 410px;
+    margin-top: 70px;
+    padding-left: 17px; }
+    .best-burger__content .best-burger__title {
+      font-family: 'Conv_Gagalin-Regular';
+      font-size: 72px;
+      color: #f9b43b;
+      margin: 0;
+      text-transform: uppercase; }
+    .best-burger__content .best-burger__desc {
+      font-family: 'Conv_Lifehack Medium';
+      font-size: 65px;
+      color: #fff;
+      margin: 0;
+      margin-top: 10px; }
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 90px; }
 
 .we {
   margin: 0 auto;
@@ -125,6 +136,159 @@
       text-align: center;
       margin-bottom: 10px;
       line-height: 23px; }
+
+.dark-burger {
+  max-width: 1100px;
+  min-height: 650px;
+  margin: 0 auto;
+  background: url(../icons/dark_burger.jpg) center top/cover no-repeat; }
+
+.team {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1100px;
+  min-height: 650px;
+  background: url(../icons/team_bg.jpg) center top/cover no-repeat; }
+  .team--rectangle {
+    position: absolute;
+    width: 540px;
+    background-color: rgba(49, 52, 54, 0.93);
+    right: 0;
+    height: 100%; }
+    .team--rectangle .about-team {
+      padding-top: 72px;
+      padding-left: 81px; }
+      .team--rectangle .about-team__title {
+        margin: 0;
+        font-family: 'Conv_Gagalin-Regular';
+        font-size: 72px;
+        color: #f9b43b;
+        margin-bottom: 59px; }
+      .team--rectangle .about-team .team-accordion {
+        display: flex;
+        flex-direction: column; }
+        .team--rectangle .about-team .team-accordion .team-accordion__block__name {
+          font-family: 'Conv_Gagalin-Regular';
+          font-size: 14px;
+          color: #fff;
+          text-transform: uppercase;
+          margin-top: 15px; }
+          .team--rectangle .about-team .team-accordion .team-accordion__block__name::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 8px solid #f9b43b;
+            display: inline-block;
+            margin-right: 11px; }
+        .team--rectangle .about-team .team-accordion .team-accordion__block .active {
+          color: #f9b43b; }
+          .team--rectangle .about-team .team-accordion .team-accordion__block .active::before {
+            transform: rotate(180deg); }
+        .team--rectangle .about-team .team-accordion .team-accordion__block__about {
+          display: flex;
+          justify-content: space-between;
+          max-width: 340px;
+          margin-bottom: 27px;
+          margin-left: 16px; }
+          .team--rectangle .about-team .team-accordion .team-accordion__block__about .team-accordion__block--size {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: #000;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-top: 8px;
+            transition: .7s; }
+            .team--rectangle .about-team .team-accordion .team-accordion__block__about .team-accordion__block--size:hover {
+              transform: scale(1.1); }
+          .team--rectangle .about-team .team-accordion .team-accordion__block__about .team-accordion__block--description {
+            max-width: 215px;
+            margin-left: 20px;
+            margin-top: 8px; }
+          .team--rectangle .about-team .team-accordion .team-accordion__block__about .team-accordion__block__prof {
+            font-family: 'Conv_Ubuntu-B';
+            font-size: 14px;
+            color: #fff;
+            margin: 0; }
+          .team--rectangle .about-team .team-accordion .team-accordion__block__about .team-accordion__block__desc {
+            font-family: 'Conv_Ubuntu-Light';
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+            margin-top: 15px;
+            line-height: 23px; }
+          .team--rectangle .about-team .team-accordion .team-accordion__block__about .team-accordion__block__foto {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); }
+
+.menu {
+  position: relative;
+  max-width: 1100px;
+  min-height: 650px;
+  margin: 0 auto;
+  background: url(../icons/menu_bg.jpg) center top/cover no-repeat;
+  overflow: hidden; }
+  .menu__title {
+    font-family: 'Conv_Gagalin-Regular';
+    font-size: 72px;
+    color: #fff;
+    margin: 0;
+    padding-top: 70px;
+    padding-left: 80px;
+    display: inline-block; }
+  .menu .menu-accordion {
+    position: absolute;
+    height: 100%;
+    min-width: 240px;
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0; }
+    .menu .menu-accordion .accor {
+      min-width: 240px;
+      position: absolute;
+      height: 100%;
+      display: flex;
+      right: 0; }
+      .menu .menu-accordion .accor .items {
+        display: flex; }
+      .menu .menu-accordion .accor .text {
+        width: 0;
+        background-color: rgba(48, 51, 54, 0.93);
+        height: 100%;
+        transition: width .7s; }
+        .menu .menu-accordion .accor .text.active {
+          width: 540px; }
+          .menu .menu-accordion .accor .text.active .text_desc {
+            opacity: 1; }
+        .menu .menu-accordion .accor .text_desc {
+          opacity: 0;
+          transition: opacity .7s; }
+    .menu .menu-accordion__item {
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; }
+      .menu .menu-accordion__item .menu-accordion__name {
+        position: absolute;
+        width: 300px;
+        font-family: 'Conv_Gagalin-Regular';
+        color: #fff;
+        font-size: 40px;
+        display: block;
+        transform: rotate(-90deg);
+        margin: 0; }
+      .menu .menu-accordion__item--meat {
+        background: url(../icons/meat_bg.jpg) no-repeat; }
+      .menu .menu-accordion__item--veget {
+        background: url(../icons/veg_bg.jpg) no-repeat; }
+      .menu .menu-accordion__item--diet {
+        background: url(../icons/diet_bg.jpg) no-repeat; }
 
 .reviews {
   margin: 0 auto;

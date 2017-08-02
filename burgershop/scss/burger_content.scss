@@ -1,0 +1,28 @@
+// основной контент первой страницы
+.best-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__image {
+        margin-left: -34px;
+    }
+    &__content {
+        max-width: 410px;
+        margin-top: 70px;
+        padding-left: 17px;
+        .best-burger__title {
+            font-family: 'Conv_Gagalin-Regular';
+            font-size: 72px;
+            color: #f9b43b;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .best-burger__desc {
+            font-family: 'Conv_Lifehack Medium';
+            font-size: 65px;
+            color: #fff;
+            margin: 0;
+            margin-top: 10px;
+        }   
+    }
+}

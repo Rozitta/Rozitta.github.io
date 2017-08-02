@@ -1,109 +1,9 @@
-@import "../fonts/Ubuntu/Ubuntu.css";
-@import "../fonts/Gagalin/Gagalin.css";
-@import "../fonts/lifehack/lifehack.css";
-
-// секция №1 "Бургер
-.header {
-    margin: 0 auto;
-    width: 1100px;
-    min-height: 650px;
-    background: url(../icons/header_bg.jpg)center top/cover no-repeat;
-    // шапка сайта
-    .navbar {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding-top: 8px;
-        padding-right: 9px;
-        &__logo {
-            margin-right: 47px;
-        }
-        &__menu {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            .navbar-menu{
-                &__list {
-                    margin: 0;
-                    padding: 0;
-                    .navbar-menu__items {
-                        display: inline-block;
-                        list-style: none;
-                        &::after {
-                            content: '\2022';
-                            color: #fff;
-                            padding: 0 15px;
-                        }
-                        &:last-child::after {
-                            content: '';
-                        }
-                        .navbar-menu__link {
-                            text-decoration: none;
-                            text-transform: uppercase;
-                            color: #fff;
-                            font-family: 'Conv_Ubuntu-Medium';
-                            font-size: 13px;
-                        }
-                    }
-                }
-            }   
-        }
-    }
-    // кнопка "Заказать"
-    .order{
-        &__submit {
-            font-family: 'Conv_Ubuntu-Medium';
-            color: #fff;
-            font-size: 13px;
-            padding: 10px 16px;
-            background-color: #e45028;
-            border: none;
-            box-sizing: border-box;
-            border-radius: 5px;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: background-color 0.7s;
-                &:hover {
-                    background-color: #c1401e;
-                }
-          }
-    }
-    // основной контент первой секции 
-    .best-burger {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &__image {
-            margin-left: -34px;
-        }
-        &__content {
-            max-width: 410px;
-            margin-top: 70px;
-            padding-left: 17px;
-            .best-burger__title {
-                font-family: 'Conv_Gagalin-Regular';
-                font-size: 72px;
-                color: #f9b43b;
-                margin: 0;
-                text-transform: uppercase;
-            }
-            .best-burger__desc {
-                font-family: 'Conv_Lifehack Medium';
-                font-size: 65px;
-                color: #fff;
-                margin: 0;
-                margin-top: 10px;
-            }   
-        }
-    }
-    // стрелка вниз
-    .arrow {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 100px;
-    } 
-}
+@import "../fonts/fonts.css";
+@import "./burger_header.scss";
+@import "./burger_base.scss";
+@import "./burger_button_order.scss";
+@import "./burger_content.scss";
+@import "./burger_arrow.scss";
 
 // секция №2 "Наша работа
 .we{
@@ -166,8 +66,209 @@
         }
     }
 }
+// cекция №3 "Черный бургер"
+.dark-burger{
+    max-width: 1100px;
+    min-height: 650px;
+    margin: 0 auto;
+    background:url(../icons/dark_burger.jpg)center top/cover no-repeat;
+}
 
-// секция №6 "Отзывы
+// cекция №4 "Команда"
+.team{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1100px;
+    min-height: 650px;
+    background: url(../icons/team_bg.jpg)center top/cover no-repeat;
+    &--rectangle{
+        position: absolute;
+        width:540px;
+        background-color:rgba(49,52,54,.93);
+        right: 0;
+        height: 100%;
+        // блок о команде
+        .about-team{
+            padding-top: 72px;
+            padding-left: 81px;
+            &__title{
+                margin: 0;
+                font-family: 'Conv_Gagalin-Regular'; 
+                font-size: 72px;
+                color: #f9b43b; 
+                margin-bottom: 59px;
+            } 
+            // аккордеон
+            .team-accordion{
+                display: flex;
+                flex-direction: column;
+                // заголовок аккордеона
+                .team-accordion__block{
+                    &__name{
+                       font-family: 'Conv_Gagalin-Regular';
+                       font-size: 14px;
+                       color:#fff;
+                       text-transform: uppercase;
+                       margin-top: 15px;
+                        &::before{
+                            content: "";
+                            width: 0;
+	                        height: 0;
+	                        border-left: 4px solid transparent;
+	                        border-right: 4px solid transparent;
+                            border-top: 8px solid #f9b43b;
+                            display: inline-block;
+                            margin-right: 11px;
+                        }
+                    }
+                    // при активном классе аккордеона
+                    .active{
+                        color:#f9b43b;
+                            &::before{
+                                transform: rotate(180deg);
+                            } 
+                        }
+                        // внутренний контент аккордеона
+                    &__about{
+                        display: flex;
+                        justify-content: space-between;
+                        max-width: 340px;
+                        margin-bottom: 27px;
+                        margin-left: 16px;
+                        .team-accordion__block{
+                            &--size{
+                                position: relative;
+                                width: 100px;
+                                height: 100px;
+                                background: #000;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                margin-top: 8px;
+                                 transition: .7s;
+                                &:hover{
+                                    transform: scale(1.1);
+                                }
+                            }
+                            &--description{
+                                max-width: 215px;
+                                margin-left: 20px;
+                                margin-top: 8px;
+                            }
+                            &__prof{
+                                font-family: 'Conv_Ubuntu-B';
+                                font-size: 14px;
+                                color:#fff;
+                                margin: 0;
+                            }
+                            &__desc{
+                                font-family: 'Conv_Ubuntu-Light';
+                                font-size: 14px;
+                                color:#fff;
+                                margin: 0;
+                                margin-top: 15px;
+                                line-height: 23px;
+                               
+                            }
+                            &__foto{
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+
+// cекция №5 "Меню"
+.menu{
+    position: relative;
+    max-width: 1100px;
+    min-height: 650px;
+    margin: 0 auto;
+    background:url(../icons/menu_bg.jpg)center top/cover no-repeat;
+    overflow: hidden;
+    &__title{
+        font-family: 'Conv_Gagalin-Regular';
+        font-size: 72px;
+        color:#fff;
+        margin: 0;
+        padding-top: 70px;
+        padding-left: 80px;
+        display: inline-block;
+    }
+    .menu-accordion{
+        position: absolute;
+        height: 100%;
+        min-width: 240px;
+        display: flex;
+        top: 0;
+        right: 0;
+        left: 0;
+        
+        .accor{
+            min-width: 240px;
+            position: absolute;
+            height: 100%;
+            display: flex;
+            right: 0;
+            .items{
+                display: flex;
+            }
+            .text{
+                width: 0;
+                background-color: rgba(48,51,54,.93);
+                height: 100%;
+                transition:width .7s;
+                &.active{
+                    width: 540px;
+                    .text_desc{
+                        opacity: 1;
+                    }
+                }
+                &_desc{
+                    opacity: 0;
+                    transition:opacity .7s;
+                }
+            }
+        }
+        &__item{
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            .menu-accordion{
+                &__name{
+                    position: absolute;
+                    width: 300px;
+                    font-family: 'Conv_Gagalin-Regular';
+                    color:#fff;
+                    font-size: 40px;
+                    display: block;
+                    transform: rotate(-90deg);
+                    margin: 0;
+
+                }
+            }
+            &--meat{
+                background: url(../icons/meat_bg.jpg) no-repeat;
+            }
+            &--veget{
+                background: url(../icons/veg_bg.jpg) no-repeat;
+            }
+            &--diet{
+                background: url(../icons/diet_bg.jpg) no-repeat;
+            }
+        }
+    }
+}
+
+// секция №6 "Отзывы"
 .reviews{
     margin: 0 auto;
     width: 1100px;

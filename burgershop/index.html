@@ -12,38 +12,43 @@
 <body>
 
     <!-- секция №1 "Бургер" -->
-    <header class="header">
-        <!-- шапка сайта -->
-        <div class="navbar">
-            <div class="navbar__logo">
-                <img class="navba__img" src="./icons/logo.svg" alt="">
-            </div>
-            <nav class="navbar__menu">
-                <ul class="navbar-menu__list">
-                    <li class="navbar-menu__items"><a class="navbar-menu__link" href="#">О Нас</a></li>
-                    <li class="navbar-menu__items"><a class="navbar-menu__link" href="#">Бургеры</a></li>
-                    <li class="navbar-menu__items"><a class="navbar-menu__link" href="#">Команда</a></li>
-                    <li class="navbar-menu__items"><a class="navbar-menu__link" href="#">Меню</a></li>
-                    <li class="navbar-menu__items"><a class="navbar-menu__link" href="#">Отзывы</a></li>
-                    <li class="navbar-menu__items"><a class="navbar-menu__link" href="#">Контакты</a></li>
-                </ul>
-                <!-- кнопка "Заказать" -->
-                <button class="order order__submit">Заказать</button>
-            </nav>
-        </div>
-        <!-- основной контент первой секции -->
-        <main>
-            <div class="best-burger">
-                <img class="best-burger__image" src="icons/burger.png" alt="">
-                <div class="best-burger__content">
-                    <h1 class="best-burger__title">Мы Делаем</h1>
-                    <span class="best-burger__desc">натуральные бургеры</span>
+    <section class="burger">
+        <div class="container">
+            <!-- шапка сайта -->
+            <header class="navbar">
+                <div class="navbar__logo">
+                    <img class="navbar__logo__img" src="./icons/logo.svg" alt="">
                 </div>
+                <nav class="navbar__menu">
+                    <ul class="navbar__list">
+                        <li class="navbar__items"><a class="navbar__link" href="#">О Нас</a></li>
+                        <li class="navbar__items"><a class="navbar__link" href="#">Бургеры</a></li>
+                        <li class="navbar__items"><a class="navbar__link" href="#">Команда</a></li>
+                        <li class="navbar__items"><a class="navbar__link" href="#">Меню</a></li>
+                        <li class="navbar__items"><a class="navbar__link" href="#">Отзывы</a></li>
+                        <li class="navbar__items"><a class="navbar__link" href="#">Контакты</a></li>
+                    </ul>
+                    <!-- кнопка "Заказать" -->
+                    <button class="order order__submit">Заказать</button>
+                </nav>
+            </header>
+            <!-- основной контент первой секции -->
+            <div class="main-content">
+                <div class="best-burger">
+                    <img class="best-burger__image" src="icons/burger.png" alt="">
+                    <div class="best-burger__content">
+                        <h1 class="best-burger__title">Мы Делаем</h1>
+                        <span class="best-burger__desc">натуральные бургеры</span>
+                    </div>
+                </div>
+                <!-- стрелка вниз -->
+                <button class="arrow">
+                    <img class="arrow_img" src="./icons/arrow-scroll.svg" alt="">
+                </button>
             </div>
-            <!-- стрелка вниз -->
-            <img class="arrow" src="./icons/arrow-scroll.svg" alt="">
-        </main>
-    </header>
+        </div>
+    </section>
+
     <!-- секция №2 "Наша работа" -->
     <section class="we">
         <h2 class="we__title">Мы лучшие</h2>
@@ -68,6 +73,137 @@
         </div>
     </section>
 
+    <!-- cекция №3 "Черный бургер" -->
+    <section class="dark-burger">
+
+    </section>
+    <!-- cекция №4 "Команда" -->
+    <section class="team">
+        <div class="team--rectangle">
+            <div class="about-team">
+                <h2 class="about-team__title">Команда</h2>
+                <!-- аккордеон -->
+                <div class="team-accordion">
+                    <!-- первый блок аккордеона -->
+                    <div class="team-accordion__block">
+                        <h3 class="team-accordion__block__name">Дэниэл Редклиф</h3>
+                        <!-- <div class="team-accordion__block__about">
+                            <div class="team-accordion__block--size">
+                                <img class="team-accordion__block__foto" src="./icons/richard.jpg" alt="">
+                            </div>
+                            <div class="team-accordion__block--description">
+                                <h4 class="team-accordion__block__prof">Оператор</h4>
+                                <p class="team-accordion__block__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                            </div>
+                        </div>  -->
+                    </div>
+                    <!-- второй блок аккордеона -->
+                    <div class="team-accordion__block">
+                        <h3 class="team-accordion__block__name active">Ричард Джеймс</h3>
+                        <div class="team-accordion__block__about">
+                            <div class="team-accordion__block--size">
+                                <img class="team-accordion__block__foto" src="./icons/richard.jpg" alt="">
+                            </div>
+                            <div class="team-accordion__block--description">
+                                <h4 class="team-accordion__block__prof">Оператор</h4>
+                                <p class="team-accordion__block__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- третий блок аккордеона -->
+                    <div class="team-accordion__block">
+                        <h3 class="team-accordion__block__name">Джейк Финн</h3>
+                        <!-- <div class="team-accordion__block__about">
+                            <div class="team-accordion__block--size">
+                                <img class="team-accordion__block__foto" src="./icons/richard.jpg" alt="">
+                            </div>
+                            <div class="team-accordion__block--description">
+                                <h4 class="team-accordion__block__prof">Оператор</h4>
+                                <p class="team-accordion__block__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- четвертый блок аккордеона -->
+                    <div class="team-accordion__block">
+                        <h3 class="team-accordion__block__name">Николай Иванов</h3>
+                        <!-- <div class="team-accordion__block__about">
+                            <div class="team-accordion__block--size">
+                                <img class="team-accordion__block__foto" src="./icons/richard.jpg" alt="">
+                            </div>
+                            <div class="team-accordion__block--description">
+                                <h4 class="team-accordion__block__prof">Оператор</h4>
+                                <p class="team-accordion__block__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                            </div>
+                        </div> -->
+                    </div>
+
+
+                </div>
+            </div>
+    </section>
+
+    <!-- секция № 5 "Меню" -->
+    <section class="menu">
+        <h2 class="menu__title">Меню</h2>
+        <div class="menu-accordion">
+            <div class="accor">
+                <div class="menu-accordion__item menu-accordion__item--meat">
+                    <h3 class="menu-accordion__name">Для мясоедов</h3>
+                </div>
+                <div class="menu-accordion__item menu-accordion__item--veget">
+                    <h3 class="menu-accordion__name">Вегетарианское</h3>
+                </div>
+                <div class="menu-accordion__item menu-accordion__item--diet">
+                    <h3 class="menu-accordion__name">Диетическое</h3>
+                </div>
+            </div>
+            <div class="accor accor_active">
+                <div class="items">
+                    <div class="menu-accordion__item menu-accordion__item--meat">
+                        <h3 class="menu-accordion__name">Для мясоедов</h3>
+                    </div>
+                    <div class="text active">
+                        <p class="text_desc">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
+                            механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал
+                            особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания,
+                            как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический
+                            характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический
+                            субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                        </p>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="menu-accordion__item menu-accordion__item--veget">
+                        <h3 class="menu-accordion__name">Вегетарианское</h3>
+                    </div>
+                    <div class="text ">
+                        <p class="text_desc">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
+                            механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал
+                            особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания,
+                            как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический
+                            характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический
+                            субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                        </p>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="menu-accordion__item menu-accordion__item--diet">
+                        <h3 class="menu-accordion__name">Диетическое</h3>
+                    </div>
+                    <div class="text ">
+                        <p class="text_desc">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
+                            механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал
+                            особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания,
+                            как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический
+                            характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический
+                            субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- секция №6 "Отзывы" -->
     <section class="reviews">
 
@@ -80,7 +216,7 @@
                 <a href="#" class="img-text__button">Подробнее</a>
             </div>
         </div>
-         <div class="reviews-item">
+        <div class="reviews-item">
             <img src="./icons/photo2.jpg" alt="" class="revie-item__img">
             <div class="img-text">
                 <h3 class="img-text__title">Константин Спилберг</h3>
@@ -147,7 +283,7 @@
                     могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                 <a href="#" class="img-text__button">Подробнее</a>
             </div>
-        </div> 
+        </div>
 
     </section>
 
