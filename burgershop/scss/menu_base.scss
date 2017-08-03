@@ -3,6 +3,7 @@
 .menu{
     position: relative;
     height: 100vh;
+     min-height: 650px;
     background:url(../icons/menu_bg.jpg)center top/cover no-repeat;
     overflow: hidden;
     .container{

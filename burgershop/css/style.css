@@ -33,6 +33,7 @@
 .burger {
   width: 100%;
   height: 100vh;
+  min-height: 650px;
   background: url(../icons/header_bg.jpg) center top/cover no-repeat; }
   .burger .container {
     max-width: 1100px;
@@ -93,7 +94,8 @@
 .advantage {
   background: url(../icons/our-work_bg.jpg) center top/cover no-repeat;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  min-height: 650px; }
   .advantage .container {
     max-width: 1100px;
     height: 100%;
@@ -145,6 +147,7 @@
 .team {
   position: relative;
   height: 100vh;
+  min-height: 650px;
   background: url(../icons/team_bg.jpg) center top/cover no-repeat; }
   .team .container {
     max-width: 1100px;
@@ -230,6 +233,7 @@
 .menu {
   position: relative;
   height: 100vh;
+  min-height: 650px;
   background: url(../icons/menu_bg.jpg) center top/cover no-repeat;
   overflow: hidden; }
   .menu .container {
@@ -298,29 +302,23 @@
       opacity: 0;
       transition: opacity .7s; }
 
-.dark-burger {
+.reviews {
   width: 100%;
   height: 100vh;
-  background: url(../icons/dark_burger.jpg) center top/cover no-repeat; }
-  .dark-burger .container {
-    max-width: 1100px;
-    margin: 0 auto; }
-
-.reviews {
-  margin: 0 auto;
-  width: 1100px;
   min-height: 650px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap; }
   .reviews .reviews-item {
     position: relative;
-    width: 275px;
+    width: 25%;
     height: 325px;
     overflow: hidden; }
-    .reviews .reviews-item:hover .img-text {
+    .reviews .reviews-item:hover .reviews-item__text {
       transform: scale(1); }
-    .reviews .reviews-item .img-text {
+    .reviews .reviews-item .reviews-item__img {
+      width: 100%; }
+    .reviews .reviews-item .reviews-item__text {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -330,17 +328,17 @@
       background-color: rgba(76, 76, 76, 0.2);
       transition: transform .9s;
       transform: scale(0); }
-      .reviews .reviews-item .img-text__title {
+      .reviews .reviews-item .reviews-item__text__title {
         font-family: 'Conv_Gagalin-Regular';
         font-size: 14px;
         color: #fff;
         text-transform: uppercase; }
-      .reviews .reviews-item .img-text__desc {
+      .reviews .reviews-item .reviews-item__text__desc {
         font-family: 'Conv_Ubuntu-Light';
         font-size: 14px;
         color: #fff;
         line-height: 24px; }
-      .reviews .reviews-item .img-text__button {
+      .reviews .reviews-item .reviews-item__text__button {
         width: 110px;
         height: 35px;
         display: block;
@@ -355,7 +353,7 @@
         padding: 13px;
         box-sizing: border-box;
         transition: background-color .7s; }
-        .reviews .reviews-item .img-text__button:hover {
+        .reviews .reviews-item .reviews-item__text__button:hover {
           background-color: #1f2122; }
 
 .menu-dots {
@@ -394,3 +392,12 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%); }
+
+.dark-burger {
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+  background: url(../icons/dark_burger.jpg) center top/cover no-repeat; }
+  .dark-burger .container {
+    max-width: 1100px;
+    margin: 0 auto; }

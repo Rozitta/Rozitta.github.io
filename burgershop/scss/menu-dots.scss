@@ -1,0 +1,47 @@
+// боковая навигация меню
+.menu-dots {
+    position: fixed;
+    top: 100px;
+    right: 168px;
+
+    &__element {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        .menu-dots{
+            &__list {
+                margin-bottom: 5px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                .menu-dots__link {
+                    position: relative;
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    border:1px solid transparent;
+                    border-radius: 50%; 
+                    &:hover{
+                        border-color:#fff;
+                        transition: 0.7s;
+                        -webkit-transition: 0.7s;
+                    } 
+                    &.active{
+                            border-color:#fff;
+                    }
+                    &--decor {
+                        position: absolute;
+                        display: block;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        top:50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                    }    -webkit-transform: translate(-50%, -50%);  
+                }   
+            }
+        }    
+    }
+}
