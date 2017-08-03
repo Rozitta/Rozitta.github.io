@@ -1,0 +1,10 @@
+// секция №4 "базовые элементы"
+.team{
+    position: relative;
+    height: 100vh;
+    background: url(../icons/team_bg.jpg)center top/cover no-repeat;
+    .container{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}

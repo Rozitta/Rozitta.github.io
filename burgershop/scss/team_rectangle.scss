@@ -1,0 +1,19 @@
+// черный квадрат абсолютно позиционированный,  в который входит аккордион
+.rectangle{
+    position: absolute;
+    width:540px;
+    background-color:rgba(49,52,54,.93);
+    right: 0;
+    height: 100%;
+    &__block{
+        padding-top: 72px;
+        padding-left: 81px;
+        &__title{
+            margin: 0;
+            font-family: 'Conv_Gagalin-Regular'; 
+            font-size: 72px;
+            color: #f9b43b; 
+            margin-bottom: 59px;
+        }   
+    }
+} 

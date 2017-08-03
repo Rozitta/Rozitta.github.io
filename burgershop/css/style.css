@@ -142,6 +142,162 @@
       margin-bottom: 10px;
       line-height: 23px; }
 
+.team {
+  position: relative;
+  height: 100vh;
+  background: url(../icons/team_bg.jpg) center top/cover no-repeat; }
+  .team .container {
+    max-width: 1100px;
+    margin: 0 auto; }
+
+.rectangle {
+  position: absolute;
+  width: 540px;
+  background-color: rgba(49, 52, 54, 0.93);
+  right: 0;
+  height: 100%; }
+  .rectangle__block {
+    padding-top: 72px;
+    padding-left: 81px; }
+    .rectangle__block__title {
+      margin: 0;
+      font-family: 'Conv_Gagalin-Regular';
+      font-size: 72px;
+      color: #f9b43b;
+      margin-bottom: 59px; }
+
+.accordion {
+  display: flex;
+  flex-direction: column; }
+  .accordion__block__name {
+    font-family: 'Conv_Gagalin-Regular';
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 15px; }
+    .accordion__block__name::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 8px solid #f9b43b;
+      display: inline-block;
+      margin-right: 11px; }
+  .accordion__block .active {
+    color: #f9b43b; }
+    .accordion__block .active::before {
+      transform: rotate(180deg); }
+  .accordion__block__about {
+    display: flex;
+    justify-content: space-between;
+    max-width: 340px;
+    margin-bottom: 27px;
+    margin-left: 16px; }
+    .accordion__block__about .accordion__block--size {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background: #000;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-top: 8px;
+      transition: .7s; }
+      .accordion__block__about .accordion__block--size:hover {
+        transform: scale(1.1); }
+    .accordion__block__about .accordion__block--description {
+      max-width: 215px;
+      margin-left: 20px;
+      margin-top: 8px; }
+    .accordion__block__about .accordion__block__prof {
+      font-family: 'Conv_Ubuntu-B';
+      font-size: 14px;
+      color: #fff;
+      margin: 0; }
+    .accordion__block__about .accordion__block__desc {
+      font-family: 'Conv_Ubuntu-Light';
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      margin-top: 15px;
+      line-height: 23px; }
+    .accordion__block__about .accordion__block__foto {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+
+.menu {
+  position: relative;
+  height: 100vh;
+  background: url(../icons/menu_bg.jpg) center top/cover no-repeat;
+  overflow: hidden; }
+  .menu .container {
+    max-width: 1100px;
+    margin: 0 auto; }
+    .menu .container .menu__title {
+      font-family: 'Conv_Gagalin-Regular';
+      font-size: 72px;
+      color: #fff;
+      margin: 0;
+      padding-top: 70px;
+      display: inline-block; }
+    .menu .container .menu__block {
+      position: absolute;
+      height: 100%;
+      min-width: 240px;
+      display: flex;
+      top: 0;
+      right: 0;
+      left: 0; }
+
+.menu__accordion {
+  min-width: 240px;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  right: 0; }
+  .menu__accordion__item {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    .menu__accordion__item--meat {
+      background: url(../icons/meat_bg.jpg) no-repeat; }
+    .menu__accordion__item--veget {
+      background: url(../icons/veg_bg.jpg) no-repeat; }
+    .menu__accordion__item--diet {
+      background: url(../icons/diet_bg.jpg) no-repeat; }
+    .menu__accordion__item .menu__accordion__name {
+      position: absolute;
+      width: 300px;
+      font-family: 'Conv_Gagalin-Regular';
+      color: #fff;
+      font-size: 40px;
+      display: block;
+      transform: rotate(-90deg);
+      margin: 0; }
+  .menu__accordion .menu__items {
+    display: flex; }
+  .menu__accordion .menu__text {
+    width: 0;
+    background-color: rgba(48, 51, 54, 0.93);
+    height: 100%;
+    transition: width .7s; }
+    .menu__accordion .menu__text.active {
+      width: 540px; }
+      .menu__accordion .menu__text.active .menu__text--desc {
+        opacity: 1; }
+    .menu__accordion .menu__text .menu__text--desc {
+      font-family: 'Conv_Ubuntu-Light';
+      font-size: 14px;
+      color: #fff;
+      line-height: 24px;
+      padding: 60px 35px;
+      opacity: 0;
+      transition: opacity .7s; }
+
 .dark-burger {
   width: 100%;
   height: 100vh;
@@ -149,153 +305,6 @@
   .dark-burger .container {
     max-width: 1100px;
     margin: 0 auto; }
-
-.team {
-  position: relative;
-  margin: 0 auto;
-  max-width: 1100px;
-  min-height: 650px;
-  background: url(../icons/team_bg.jpg) center top/cover no-repeat; }
-  .team--rectangle {
-    position: absolute;
-    width: 540px;
-    background-color: rgba(49, 52, 54, 0.93);
-    right: 0;
-    height: 100%; }
-    .team--rectangle .about-team {
-      padding-top: 72px;
-      padding-left: 81px; }
-      .team--rectangle .about-team__title {
-        margin: 0;
-        font-family: 'Conv_Gagalin-Regular';
-        font-size: 72px;
-        color: #f9b43b;
-        margin-bottom: 59px; }
-      .team--rectangle .about-team .team-accordion {
-        display: flex;
-        flex-direction: column; }
-        .team--rectangle .about-team .team-accordion .team-accordion__block__name {
-          font-family: 'Conv_Gagalin-Regular';
-          font-size: 14px;
-          color: #fff;
-          text-transform: uppercase;
-          margin-top: 15px; }
-          .team--rectangle .about-team .team-accordion .team-accordion__block__name::before {
-            content: "";
-            width: 0;
-            height: 0;
-            border-left: 4px solid transparent;
-            border-right: 4px solid transparent;
-            border-top: 8px solid #f9b43b;
-            display: inline-block;
-            margin-right: 11px; }
-        .team--rectangle .about-team .team-accordion .team-accordion__block .active {
-          color: #f9b43b; }
-          .team--rectangle .about-team .team-accordion .team-accordion__block .active::before {
-            transform: rotate(180deg); }
-        .team--rectangle .about-team .team-accordion .team-accordion__block__about {
-          display: flex;
-          justify-content: space-between;
-          max-width: 340px;
-          margin-bottom: 27px;
-          margin-left: 16px; }
-          .team--rectangle .about-team .team-accordion .team-accordion__block__about .team-accordion__block--size {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            background: #000;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-top: 8px;
-            transition: .7s; }
-            .team--rectangle .about-team .team-accordion .team-accordion__block__about .team-accordion__block--size:hover {
-              transform: scale(1.1); }
-          .team--rectangle .about-team .team-accordion .team-accordion__block__about .team-accordion__block--description {
-            max-width: 215px;
-            margin-left: 20px;
-            margin-top: 8px; }
-          .team--rectangle .about-team .team-accordion .team-accordion__block__about .team-accordion__block__prof {
-            font-family: 'Conv_Ubuntu-B';
-            font-size: 14px;
-            color: #fff;
-            margin: 0; }
-          .team--rectangle .about-team .team-accordion .team-accordion__block__about .team-accordion__block__desc {
-            font-family: 'Conv_Ubuntu-Light';
-            font-size: 14px;
-            color: #fff;
-            margin: 0;
-            margin-top: 15px;
-            line-height: 23px; }
-          .team--rectangle .about-team .team-accordion .team-accordion__block__about .team-accordion__block__foto {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%); }
-
-.menu {
-  position: relative;
-  max-width: 1100px;
-  min-height: 650px;
-  margin: 0 auto;
-  background: url(../icons/menu_bg.jpg) center top/cover no-repeat;
-  overflow: hidden; }
-  .menu__title {
-    font-family: 'Conv_Gagalin-Regular';
-    font-size: 72px;
-    color: #fff;
-    margin: 0;
-    padding-top: 70px;
-    padding-left: 80px;
-    display: inline-block; }
-  .menu .menu-accordion {
-    position: absolute;
-    height: 100%;
-    min-width: 240px;
-    display: flex;
-    top: 0;
-    right: 0;
-    left: 0; }
-    .menu .menu-accordion .accor {
-      min-width: 240px;
-      position: absolute;
-      height: 100%;
-      display: flex;
-      right: 0; }
-      .menu .menu-accordion .accor .items {
-        display: flex; }
-      .menu .menu-accordion .accor .text {
-        width: 0;
-        background-color: rgba(48, 51, 54, 0.93);
-        height: 100%;
-        transition: width .7s; }
-        .menu .menu-accordion .accor .text.active {
-          width: 540px; }
-          .menu .menu-accordion .accor .text.active .text_desc {
-            opacity: 1; }
-        .menu .menu-accordion .accor .text_desc {
-          opacity: 0;
-          transition: opacity .7s; }
-    .menu .menu-accordion__item {
-      width: 80px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%; }
-      .menu .menu-accordion__item .menu-accordion__name {
-        position: absolute;
-        width: 300px;
-        font-family: 'Conv_Gagalin-Regular';
-        color: #fff;
-        font-size: 40px;
-        display: block;
-        transform: rotate(-90deg);
-        margin: 0; }
-      .menu .menu-accordion__item--meat {
-        background: url(../icons/meat_bg.jpg) no-repeat; }
-      .menu .menu-accordion__item--veget {
-        background: url(../icons/veg_bg.jpg) no-repeat; }
-      .menu .menu-accordion__item--diet {
-        background: url(../icons/diet_bg.jpg) no-repeat; }
 
 .reviews {
   margin: 0 auto;
