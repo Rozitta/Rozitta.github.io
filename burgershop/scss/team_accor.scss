@@ -4,12 +4,13 @@
     flex-direction: column;
     // заголовок аккордеона
     &__block{
+        margin: 15px 0;
         &__name{
         font-family: 'Conv_Gagalin-Regular';
         font-size: 14px;
         color:#fff;
         text-transform: uppercase;
-        margin-top: 15px;
+        margin: 0;
             &::before{
                 content: "";
                 width: 0;
@@ -22,20 +23,31 @@
             }
         }
         // при активном классе аккордеона
-        .active{
-            color:#f9b43b;
+        &.active{
+            .accordion__block__about{
+                height: 100%;
+                padding-top: 18px;
+            } 
+            h3{
+                color:#f9b43b;
                 &::before{
                     transform: rotate(180deg);
                 } 
             }
+        }
             // внутренний контент аккордеона
         &__about{
             display: flex;
             justify-content: space-between;
             max-width: 340px;
-            margin-bottom: 27px;
+            // margin-bottom: 27px;
             margin-left: 16px;
+            //  padding-top: 18px;
+             height: 0;
+             overflow: hidden;
+             transition:height .7s ;
             .accordion__block{
+               
                 &--size{
                     position: relative;
                     width: 100px;
@@ -43,7 +55,6 @@
                     background: #000;
                     border-radius: 50%;
                     overflow: hidden;
-                    margin-top: 8px;
                     transition: .7s;
                     &:hover{
                         transform: scale(1.1);
@@ -52,7 +63,6 @@
                 &--description{
                     max-width: 215px;
                     margin-left: 20px;
-                    margin-top: 8px;
                 }
                 &__prof{
                     font-family: 'Conv_Ubuntu-B';
