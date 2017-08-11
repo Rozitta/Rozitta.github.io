@@ -1,15 +1,15 @@
 
  .footer{
     position: absolute;
-    bottom: 3px;
-    background-color: #0e0e0e;
-    height: 55px;
+    bottom: rem(3px);
+    background-color: $about-black;
+    height: rem(55px);
     left: 0;
     width: 100%;
-    padding: 5px 0;
+    padding: rem(5px) 0;
         
     .container{
-        max-width: 1100px;
+        max-width: rem(1100px);
         margin: 0 auto;
         .footer__block{
             display: flex;
@@ -17,37 +17,37 @@
             align-items: center;
             .footer__item{
                 &__adress{
-                    font-size: 14px;
+                    font-size: rem(14px);
                     color:#fff;
-                    font-family: 'Conv_Ubuntu-Light';
+                    font-family: $Ubuntu-Light;
                     margin: 0;
-                    margin-bottom: 12px;
-                    margin-top: 5px;
+                    margin-bottom: rem(12px);
+                    margin-top: rem(5px);
                 }
                 &__tel{
                     color:#e45028;
-                    font-size: 14px;
-                    font-family: 'Conv_Ubuntu-B';
+                    font-size: rem(14px);
+                    font-family: $Ubuntu-Bold;
                     position: relative;
-                    left: 21px;
+                    left: rem(21px);
 
                     &::before{
                         content: "";
                         background: url(../icons/phone.svg);
                         position: absolute;
-                        left: -21px;
+                        left: rem(-21px);
                         bottom: 0;
-                        color:#e45028;
-                        width: 11px;
-                        height: 11px;
-                        margin-right: 8px;
+                        color:$orange;
+                        width: rem(11px);
+                        height: rem(11px);
+                        margin-right: rem(8px);
                     }
                 }
                 &__socials{
-                    width: 20px;
-                    height: 20px;
-                    margin-left:11px;
-                    margin-top: 9px;
+                    width: rem(20px);
+                    height: rem(20px);
+                    margin-left:rem(11px);
+                    margin-top: rem(9px);
                 }
             } 
         }  

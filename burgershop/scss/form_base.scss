@@ -2,19 +2,19 @@
 .delivery{
     width: 100%;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     background: url(../icons/form_bg.jpg)center top/cover no-repeat;
     .container{
-        max-width: 1100px;
+        max-width: rem(1100px);
         margin: 0 auto;
         .delivery__title{
-            font-family: 'Conv_Gagalin-Regular';
-            color:#f9b43b;
-            font-size: 72px;
+            font-family: $Gagalin-Regular;
+            color:$yellow;
+            font-size: rem(72px);
             text-align: center;
             margin: 0;
-            padding-top: 90px;
-            padding-bottom: 75px;
+            padding-top: rem(90px);
+            padding-bottom: rem(75px);
             text-transform: uppercase;
         }
     }

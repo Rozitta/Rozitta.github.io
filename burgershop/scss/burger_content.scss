@@ -3,26 +3,41 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include tablets(){
+        flex-direction: column;
+    }
     &__image {
-        margin-left: -34px;
+        margin-left: rem(-34px);
+        max-width: rem(450px);
+        height: rem(450px);
+        @include tablets(){
+            margin: 0;
+            // max-width: 450px;
+        }
+        &--size{
+            @include tablets(){
+            width: 100%;
+            }
+        }
     }
     &__content {
-        max-width: 410px;
-        margin-top: 70px;
-        padding-left: 17px;
+        max-width: rem(410px);
+        margin-top: rem(70px);
+        padding-left: rem(17px);
         .best-burger__title {
-            font-family: 'Conv_Gagalin-Regular';
-            font-size: 72px;
-            color: #f9b43b;
+            font-family: $Gagalin-Regular;
+            font-size: rem(72px);
+            color: $yellow;
             margin: 0;
             text-transform: uppercase;
             .best-burger__desc {
-                font-family: 'Conv_Lifehack Medium';
-                font-size: 65px;
-                color: #fff;
+                font-family: $Lifehack-Medium;
+                font-size: rem(65px);
+                color: $white;
                 margin: 0;
-                margin-top: 10px;
+                margin-top: rem(15px);
                 text-transform: none;
+                line-height: 1;
             }   
         } 
     }

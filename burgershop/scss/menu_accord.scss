@@ -1,13 +1,13 @@
 // cекция №5 "Меню" аккордион
 
 .menu__accordion{
-    min-width: 240px;
+    min-width: rem(240px);
     position: absolute;
     height: 100%;
     display: flex;
     right: 0;
     &__item{
-        width: 80px;
+        width: rem(80px);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -24,10 +24,10 @@
     .menu__accordion{
         &__name{
             position: absolute;
-            width: 300px;
-            font-family: 'Conv_Gagalin-Regular';
-            color:#fff;
-            font-size: 40px;
+            width: rem(300px);
+            font-family: $Gagalin-Regular;
+            color:$white;
+            font-size: rem(40px);
             display: block;
             transform: rotate(-90deg);
             margin: 0;
@@ -44,17 +44,17 @@
         height: 100%;
         transition:width .7s;
         &.active{
-            width: 540px;
+            width: rem(540px);
             .menu__text--desc{
                 opacity: 1;
             }
         }
         .menu__text--desc{
-            font-family: 'Conv_Ubuntu-Light';
-            font-size: 14px;
-            color:#fff;
-            line-height: 24px;
-            padding: 60px 35px;
+            font-family: $Ubuntu-Light;
+            font-size: rem(14px);
+            color:$white;
+            line-height: rem(24px);
+            padding: rem(60px) rem(35px);
             opacity: 0;
             transition:opacity .7s;
         }

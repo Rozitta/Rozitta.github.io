@@ -3,37 +3,56 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 8px;
-    padding-right: 9px;
+    padding-top: rem(8px);
+    padding-right: rem(9px);
+    @include tablets(){
+        justify-content: space-between;
+    }
         &__logo {
-            margin-right: 47px;
+            margin-right: rem(47px);
         }
         &__menu {
             display: flex;
             justify-content: space-around;
             align-items: center;
+
             .navbar__list {
                 margin: 0;
                 padding: 0;
+                @include tablets(){
+                    display: none;
+                }
                 .navbar__items {
                     display: inline-block;
                     list-style: none;
                     &::after {
                         content: '\2022';
-                        color: #fff;
-                        padding: 0 15px;
+                        color:$white;
+                        padding: 0 rem(15px);
                     }
                     &:last-child::after {
                         content: '';
                     }
                     .navbar__link{
-                            text-decoration: none;
+                        text-decoration: none;
                         text-transform: uppercase;
                         color: #fff;
-                        font-family: 'Conv_Ubuntu-Medium';
-                        font-size: 13px;
+                        font-family: $Ubuntu-Medium;
+                        font-size: rem(13px);
                     }
             }
+        }
+    }
+    &__hamburger{
+        margin-left: rem(30px);
+        width: rem(25px);
+        height: rem(25px);
+        display: none; 
+        &--img{
+            width: 100%;
+        }
+        @include tablets(){
+            display: block;
         }
     }
 }          

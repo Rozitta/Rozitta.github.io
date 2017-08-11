@@ -1,0 +1,22 @@
+html{
+    @include tablets{
+        font-size: 14px;
+    }
+    @include phones{
+        font-size: 12px;
+    }
+}
+html,
+body{
+    height: 100%;
+}
+body{
+    font-size: rem(16px);
+    line-height: 1.42;
+}
+.container{
+    max-width: rem(950px);
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+}

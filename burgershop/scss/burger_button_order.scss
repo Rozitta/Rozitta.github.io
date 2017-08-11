@@ -2,18 +2,18 @@
 .order{
     &__submit {
         font-family: 'Conv_Ubuntu-Medium';
-        color: #fff;
-        font-size: 13px;
-        padding: 10px 16px;
-        background-color: #e45028;
+        color: $white;
+        font-size: rem(13px);
+        padding: rem(10px) rem(16px);
+        background-color: $orange;
         border: none;
         box-sizing: border-box;
-        border-radius: 5px;
+        border-radius: rem(5px);
         text-transform: uppercase;
         cursor: pointer;
         transition: background-color 0.7s;
         &:hover {
-            background-color: #c1401e;
+            background-color: $orange-darken;
         }
     }
 }

@@ -1,8 +1,8 @@
 // боковая навигация меню
 .menu-dots {
     position: fixed;
-    top: 100px;
-    right: 168px;
+    top: rem(100px);
+    right: rem(168px);
 
     &__element {
         margin: 0;
@@ -10,32 +10,32 @@
         list-style: none;
         .menu-dots{
             &__list {
-                margin-bottom: 5px;
+                margin-bottom: rem(5px);
                 &:last-child{
                     margin-bottom: 0;
                 }
                 .menu-dots__link {
                     position: relative;
                     display: block;
-                    width: 16px;
-                    height: 16px;
-                    border:1px solid transparent;
+                    width: rem(16px);
+                    height: rem(16px);
+                    border:rem(1px) solid transparent;
                     border-radius: 50%; 
                     &:hover{
-                        border-color:#fff;
+                        border-color:$white;
                         transition: 0.7s;
                         -webkit-transition: 0.7s;
                     } 
                     &.active{
-                            border-color:#fff;
+                            border-color:$white;
                     }
                     &--decor {
                         position: absolute;
                         display: block;
-                        width: 6px;
-                        height: 6px;
+                        width: rem(6px);
+                        height: rem(6px);
                         border-radius: 50%;
-                        background-color: #fff;
+                        background-color: $white;
                         top:50%;
                         left: 50%;
                         transform: translate(-50%,-50%);
@@ -43,5 +43,8 @@
                 }   
             }
         }    
+    }
+    @include tablets(){
+        display: none;
     }
 }

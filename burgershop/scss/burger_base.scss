@@ -2,17 +2,22 @@
 
 .burger {
     width: 100%;
-    height: 100vh;
-     min-height: 650px;
-    background: url(../icons/header_bg.jpg)center top/cover no-repeat;
-    .container{
-        max-width: 1100px;
-        height: 100%;
-        margin: 0 auto;
-        .main-content{
-            height: 100%;
-            display: flex;
-            flex-direction: column;
+    min-height: 100vh;
+    // min-height: rem(650px);
+    background-image: url("../icons/header_bg.jpg");
+    background-position: center top;
+    background-size:cover;
+    background-repeat: no-repeat;
+        @include tablets(){
+            background-size:auto;
         }
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
