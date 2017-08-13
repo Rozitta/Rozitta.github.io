@@ -5,15 +5,32 @@
     background-color:rgba(49,52,54,.93);
     right: 0;
     height: 100%;
+     @include tablets(){
+         left: 0;
+         right: 0;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+     }
     &__block{
         padding-top: rem(72px);
         padding-left: rem(81px);
+        @include tablets(){
+            padding-left: 0;
+        }
+        @include tablets(){
+            max-width: rem(345px);
+            padding-top: rem(96px);
+        }
         &__title{
             margin: 0;
             font-family: $Gagalin-Regular; 
             font-size: rem(72px);
             color: $yellow; 
             margin-bottom: rem(59px);
+            @include tablets(){
+                margin-bottom: rem(86px);
+            }
         }   
     }
 } 

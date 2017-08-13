@@ -7,22 +7,81 @@
     max-width: rem(940px);
     margin:0 auto;
     margin-top: rem(69px);
+    @include laptop(){
+         margin-top: rem(155px);
+         margin-bottom: rem(355px);
+        }
+    @include phones(){
+        padding-left: rem(15px);
+        padding-right: rem(5px);
+        flex-wrap: wrap;
+        justify-content: space-between;  
+        margin-top: rem(85px); 
+        margin-bottom: rem(200px);  
+        }
+    
+        
     .work-type{
         max-width: rem(300px);
         display: flex;
         flex-direction: column;
+        @include laptop(){
+                margin-right: rem(5px);
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        @include phones(){
+            margin-right: 0;
+            margin-bottom: rem(35px);
+            max-width: 100%;  
+            flex-direction: inherit; 
+            align-items: center;
+        }
+        &__abt{
+        @include phones(){
+            max-width: rem(320px);
+           
+            }
+        }
         &__img{
+            width: rem(110px);
+            height: rem(110px);
             margin: 0 auto;
             margin-bottom: rem(35px);
+        @include phones(){
+            margin-right: rem(18px);
+            margin-bottom: 0;
+            width: 110px;
+            height: 110px;
+            }
             &--hand{
                 margin-top: rem(8px);
+                @media (max-width:515px){
+                    margin-top: rem(80px);
+                }
+                @include phones(){
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-right: rem(20px);
+                    margin-left: rem(20px);
+                }
             }
             &--meat{
                 margin-top: rem(-18px);
+                @include phones(){
+                    margin-top: 0;
+                    
+                }
             }
             &--salat{
                 margin-top: rem(-8px);
                 margin-bottom: rem(38px);
+                @include phones(){
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: rem(5px);
+                }
                 
             }
         }
@@ -33,6 +92,11 @@
             margin: 0; 
             text-align: center;
             margin-bottom: rem(-2px);
+            @include phones(){
+                text-align: left;
+                font-size: 24px;
+            }
+            
         }
         &__desc{
             font-family: $Ubuntu-Light;
@@ -41,6 +105,12 @@
             text-align: center;
             margin-bottom: rem(10px);
             line-height: rem(23px);
+            @include phones(){
+                text-align: left;
+                font-size: 14px;
+                line-height: 23px;
+            }
+            
         }
     }
 }

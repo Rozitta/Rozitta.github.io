@@ -29,6 +29,9 @@
                         content: '\2022';
                         color:$white;
                         padding: 0 rem(15px);
+                    @include before_tablets(){
+                        padding: 0 rem(10px);
+                        }
                     }
                     &:last-child::after {
                         content: '';

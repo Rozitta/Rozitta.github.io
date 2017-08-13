@@ -3,18 +3,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: rem(15px);
+    @include laptop(){
+            margin-bottom: rem(42px);
+        }
+    @include before_tablets(){
+        margin-bottom: rem(92px);
+    }
     @include tablets(){
         flex-direction: column;
+        margin-bottom: rem(15px);
     }
     &__image {
         margin-left: rem(-34px);
         max-width: rem(450px);
-        height: rem(450px);
+        // height: rem(450px);
+        @include laptop(){
+            margin: 0;
+        }
         @include tablets(){
             margin: 0;
-            // max-width: 450px;
+            max-width: rem(450px);
+            margin-top: rem(68px);
         }
         &--size{
+            width: 100%;
             @include tablets(){
             width: 100%;
             }
@@ -24,12 +37,26 @@
         max-width: rem(410px);
         margin-top: rem(70px);
         padding-left: rem(17px);
+        
+           
+        @include laptop(){
+            padding-left: 0;
+            margin-top: rem(5px);
+        }
+        
         .best-burger__title {
             font-family: $Gagalin-Regular;
             font-size: rem(72px);
             color: $yellow;
             margin: 0;
             text-transform: uppercase;
+            @include laptop(){
+                padding-left: 14px;
+                margin-top: rem(50px);
+            }
+            @media (max-width:365px){
+                padding-left: 0;
+            }
             .best-burger__desc {
                 font-family: $Lifehack-Medium;
                 font-size: rem(65px);
@@ -38,6 +65,9 @@
                 margin-top: rem(15px);
                 text-transform: none;
                 line-height: 1;
+                @include laptop(){
+                    text-align: center;
+                }
             }   
         } 
     }

@@ -3,6 +3,9 @@
     position: fixed;
     top: rem(100px);
     right: rem(168px);
+    @include laptop(){
+         right: rem(60px);
+        }
 
     &__element {
         margin: 0;

@@ -1,6 +1,9 @@
 html{
+    @include laptop{
+        font-size: 15px;
+    }
     @include tablets{
-        font-size: 14px;
+        font-size: 16px;
     }
     @include phones{
         font-size: 12px;
@@ -16,7 +19,7 @@ body{
 }
 .container{
     max-width: rem(950px);
-    width: 95%;
+    width: 94%;
     height: 100%;
     margin: 0 auto;
 }

@@ -6,4 +6,7 @@
     margin: auto;
     cursor: pointer;
     margin-bottom: rem(30px);
+    @include laptop(){
+        margin-top: rem(50px);
+    }
 }   

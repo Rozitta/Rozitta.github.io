@@ -1,7 +1,10 @@
 @import url(../fonts/fonts.css);
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 15px; } }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 14px; } }
+    font-size: 16px; } }
 @media screen and (max-width: 480px) {
   html {
     font-size: 12px; } }
@@ -16,7 +19,7 @@ body {
 
 .container {
   max-width: 59.375rem;
-  width: 95%;
+  width: 94%;
   height: 100%;
   margin: 0 auto; }
 
@@ -60,6 +63,9 @@ body {
           content: '\2022';
           color: #fff;
           padding: 0 0.9375rem; }
+          @media screen and (max-width: 850px) {
+            .navbar__menu .navbar__list .navbar__items::after {
+              padding: 0 0.625rem; } }
         .navbar__menu .navbar__list .navbar__items:last-child::after {
           content: ''; }
         .navbar__menu .navbar__list .navbar__items .navbar__link {
@@ -86,9 +92,6 @@ body {
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat; }
-  @media screen and (max-width: 768px) {
-    .burger {
-      background-size: auto; } }
   .burger__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -133,33 +136,58 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: 0.9375rem; }
+  @media screen and (max-width: 992px) {
+    .best-burger {
+      margin-bottom: 2.625rem; } }
+  @media screen and (max-width: 850px) {
+    .best-burger {
+      margin-bottom: 5.75rem; } }
   @media screen and (max-width: 768px) {
     .best-burger {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      margin-bottom: 0.9375rem; } }
   .best-burger__image {
     margin-left: -2.125rem;
-    max-width: 28.125rem;
-    height: 28.125rem; }
-    @media screen and (max-width: 768px) {
+    max-width: 28.125rem; }
+    @media screen and (max-width: 992px) {
       .best-burger__image {
         margin: 0; } }
     @media screen and (max-width: 768px) {
-      .best-burger__image--size {
-        width: 100%; } }
+      .best-burger__image {
+        margin: 0;
+        max-width: 28.125rem;
+        margin-top: 4.25rem; } }
+    .best-burger__image--size {
+      width: 100%; }
+      @media screen and (max-width: 768px) {
+        .best-burger__image--size {
+          width: 100%; } }
   .best-burger__content {
     max-width: 25.625rem;
     margin-top: 4.375rem;
     padding-left: 1.0625rem; }
+    @media screen and (max-width: 992px) {
+      .best-burger__content {
+        padding-left: 0;
+        margin-top: 0.3125rem; } }
     .best-burger__content .best-burger__title {
       font-family: "Conv_Gagalin-Regular";
       font-size: 4.5rem;
       color: #f9b43b;
       margin: 0;
       text-transform: uppercase; }
+      @media screen and (max-width: 992px) {
+        .best-burger__content .best-burger__title {
+          padding-left: 14px;
+          margin-top: 3.125rem; } }
+      @media (max-width: 365px) {
+        .best-burger__content .best-burger__title {
+          padding-left: 0; } }
       .best-burger__content .best-burger__title .best-burger__desc {
         font-family: "Conv_Lifehack Medium";
         font-size: 4.0625rem;
@@ -168,6 +196,9 @@ body {
         margin-top: 0.9375rem;
         text-transform: none;
         line-height: 1; }
+        @media screen and (max-width: 992px) {
+          .best-burger__content .best-burger__title .best-burger__desc {
+            text-align: center; } }
 
 .arrow {
   background-color: transparent;
@@ -176,12 +207,14 @@ body {
   margin: auto;
   cursor: pointer;
   margin-bottom: 1.875rem; }
+  @media screen and (max-width: 992px) {
+    .arrow {
+      margin-top: 3.125rem; } }
 
 .advantage {
   background: url(../icons/our-work_bg.jpg) center top/cover no-repeat;
   width: 100%;
-  height: 100vh;
-  min-height: 40.625rem; }
+  min-height: 100vh; }
   .advantage .container {
     max-width: 68.75rem;
     height: 100%;
@@ -193,6 +226,12 @@ body {
       text-align: center;
       margin: 0;
       padding-top: 3.6875rem; }
+      @media screen and (max-width: 992px) {
+        .advantage .container .advantage__title {
+          padding-top: 5.5625rem; } }
+      @media screen and (max-width: 480px) {
+        .advantage .container .advantage__title {
+          padding-top: 40px; } }
 
 .work {
   display: -webkit-box;
@@ -206,6 +245,21 @@ body {
   max-width: 58.75rem;
   margin: 0 auto;
   margin-top: 4.3125rem; }
+  @media screen and (max-width: 992px) {
+    .work {
+      margin-top: 9.6875rem;
+      margin-bottom: 22.1875rem; } }
+  @media screen and (max-width: 480px) {
+    .work {
+      padding-left: 0.9375rem;
+      padding-right: 0.3125rem;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 5.3125rem;
+      margin-bottom: 12.5rem; } }
   .work .work-type {
     max-width: 18.75rem;
     display: -webkit-box;
@@ -215,16 +269,61 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    @media screen and (max-width: 992px) {
+      .work .work-type {
+        margin-right: 0.3125rem; }
+        .work .work-type:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      .work .work-type {
+        margin-right: 0;
+        margin-bottom: 2.1875rem;
+        max-width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: inherit;
+                flex-direction: inherit;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+    @media screen and (max-width: 480px) {
+      .work .work-type__abt {
+        max-width: 20rem; } }
     .work .work-type__img {
+      width: 6.875rem;
+      height: 6.875rem;
       margin: 0 auto;
       margin-bottom: 2.1875rem; }
+      @media screen and (max-width: 480px) {
+        .work .work-type__img {
+          margin-right: 1.125rem;
+          margin-bottom: 0;
+          width: 110px;
+          height: 110px; } }
       .work .work-type__img--hand {
         margin-top: 0.5rem; }
+        @media (max-width: 515px) {
+          .work .work-type__img--hand {
+            margin-top: 5rem; } }
+        @media screen and (max-width: 480px) {
+          .work .work-type__img--hand {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: 1.25rem;
+            margin-left: 1.25rem; } }
       .work .work-type__img--meat {
         margin-top: -1.125rem; }
+        @media screen and (max-width: 480px) {
+          .work .work-type__img--meat {
+            margin-top: 0; } }
       .work .work-type__img--salat {
         margin-top: -0.5rem;
         margin-bottom: 2.375rem; }
+        @media screen and (max-width: 480px) {
+          .work .work-type__img--salat {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 0.3125rem; } }
     .work .work-type__title {
       font-family: "Conv_Lifehack Medium";
       font-size: 1.5rem;
@@ -232,6 +331,10 @@ body {
       margin: 0;
       text-align: center;
       margin-bottom: -0.125rem; }
+      @media screen and (max-width: 480px) {
+        .work .work-type__title {
+          text-align: left;
+          font-size: 24px; } }
     .work .work-type__desc {
       font-family: "Conv_Ubuntu-Light";
       font-size: 0.875rem;
@@ -239,11 +342,15 @@ body {
       text-align: center;
       margin-bottom: 0.625rem;
       line-height: 1.4375rem; }
+      @media screen and (max-width: 480px) {
+        .work .work-type__desc {
+          text-align: left;
+          font-size: 14px;
+          line-height: 23px; } }
 
 .team {
   position: relative;
-  height: 100vh;
-  min-height: 40.625rem;
+  min-height: 100vh;
   background: url(../icons/team_bg.jpg) center top/cover no-repeat; }
   .team .container {
     max-width: 68.75rem;
@@ -255,15 +362,36 @@ body {
   background-color: rgba(49, 52, 54, 0.93);
   right: 0;
   height: 100%; }
+  @media screen and (max-width: 768px) {
+    .rectangle {
+      left: 0;
+      right: 0;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .rectangle__block {
     padding-top: 4.5rem;
     padding-left: 5.0625rem; }
+    @media screen and (max-width: 768px) {
+      .rectangle__block {
+        padding-left: 0; } }
+    @media screen and (max-width: 768px) {
+      .rectangle__block {
+        max-width: 21.5625rem;
+        padding-top: 6rem; } }
     .rectangle__block__title {
       margin: 0;
       font-family: "Conv_Gagalin-Regular";
       font-size: 4.5rem;
       color: #f9b43b;
       margin-bottom: 3.6875rem; }
+      @media screen and (max-width: 768px) {
+        .rectangle__block__title {
+          margin-bottom: 5.375rem; } }
 
 .accordion {
   display: -webkit-box;
@@ -273,6 +401,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media screen and (max-width: 768px) {
+    .accordion {
+      text-align: center; } }
   .accordion__block {
     margin: 0.9375rem 0; }
     .accordion__block__name {
@@ -281,6 +412,9 @@ body {
       color: #fff;
       text-transform: uppercase;
       margin: 0; }
+      @media screen and (max-width: 768px) {
+        .accordion__block__name {
+          font-size: 1.5625rem; } }
       .accordion__block__name::before {
         content: "";
         width: 0;
@@ -311,6 +445,19 @@ body {
       overflow: hidden;
       -webkit-transition: height 0.7s;
       transition: height 0.7s; }
+      @media screen and (max-width: 768px) {
+        .accordion__block__about {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
+      @media screen and (max-width: 768px) {
+        .accordion__block__about {
+          margin-left: 0;
+          padding-top: 9px; } }
       .accordion__block__about .accordion__block--size {
         position: relative;
         width: 6.25rem;
@@ -326,6 +473,11 @@ body {
       .accordion__block__about .accordion__block--description {
         max-width: 13.4375rem;
         margin-left: 1.25rem; }
+        @media screen and (max-width: 768px) {
+          .accordion__block__about .accordion__block--description {
+            padding-top: 1.0625rem;
+            max-width: 21rem;
+            margin-left: 0; } }
       .accordion__block__about .accordion__block__prof {
         font-family: "Conv_Ubuntu-B";
         font-size: 0.875rem;
@@ -503,6 +655,9 @@ body {
   position: fixed;
   top: 6.25rem;
   right: 10.5rem; }
+  @media screen and (max-width: 992px) {
+    .menu-dots {
+      right: 3.75rem; } }
   .menu-dots__element {
     margin: 0;
     padding: 0;
